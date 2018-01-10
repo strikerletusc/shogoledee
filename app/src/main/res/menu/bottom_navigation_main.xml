@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/feed"
+        android:enabled="true"
+        android:icon="@drawable/ic_feed"
+        android:title="Feed"
+        />
+
+    <item
+        android:id="@+id/chef"
+        android:enabled="true"
+        android:icon="@drawable/person"
+        android:title="Chef"
+         />
+    <item
+        android:id="@+id/profile"
+        android:enabled="true"
+        android:icon="@drawable/person"
+        android:title="Profile"
+         />
+    <item
+        android:id="@+id/cart"
+        android:enabled="true"
+        android:icon="@drawable/cart"
+        android:title="Cart"
+         />
+
+    <item
+    android:id="@+id/filter"
+    android:enabled="true"
+    android:icon="@drawable/filter"
+    android:title="Filter"
+   />
+
+
+
+</menu>

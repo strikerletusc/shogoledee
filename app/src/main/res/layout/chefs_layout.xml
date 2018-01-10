@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+
+    <android.support.v7.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:foreground="@drawable/card_background"
+        android:elevation="3dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/chef_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="#ffffff"
+                android:id="@+id/chef_image"/>
+<!--            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/chef_image"
+                android:id="@+id/chef_image"/>-->
+
+
+            <TextView
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chef Name"
+                android:gravity="center"
+                android:layout_below="@+id/chef_image"
+                android:id="@+id/chef_name"
+                />
+
+
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="Chef Location"
+                android:layout_below="@id/chef_name"
+                android:id="@+id/chef_location"
+                />
+
+            <RatingBar
+                style="?android:attr/ratingBarStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/rating_bar"
+                android:layout_alignParentBottom="true"
+                android:theme="@style/RatingBar" />
+            <!--<ImageView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/star"-->
+                <!--android:id="@+id/chef_review"-->
+                <!--android:layout_below="@+id/chef_location"-->
+                <!--android:layout_marginBottom="10dp"/>-->
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
