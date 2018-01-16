@@ -1,5 +1,6 @@
 package com.e1sol.shogoleeedee.activities;
 
+import android.content.Context;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.FragmentManager;
@@ -18,6 +19,8 @@ import com.e1sol.shogoleeedee.R;
 import com.e1sol.shogoleeedee.models.Chefs;
 
 import java.util.List;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -84,5 +87,9 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
 
+    }
 }
